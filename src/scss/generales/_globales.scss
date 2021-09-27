@@ -1,0 +1,72 @@
+.oculto{
+
+    display: none;
+
+}
+
+body{
+  // font-family: $fuente-principal;
+  font-size: 1.5rem;
+  &.fijar-body{
+
+    overflow: hidden !important;
+
+  }
+
+  &.no-fijar-body{
+
+    overflow: scroll !important;
+
+  }
+}
+
+.contenedor{
+width: 100%;
+margin: auto  auto;
+@include tablet-chica{
+
+  width: 100%;
+
+}
+@include tablet-grande{
+
+  width: 60vw;
+
+}
+
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+img{
+
+    width: 100%;
+    z-index: 1;
+}
+
+h1,h2,h2,h4,h5{
+
+    margin: 0;
+
+
+}
+
+.gris-fondo{
+
+     
+  box-shadow: -2px 0px 9px 2px rgba(0,0,0,0.5);
+  -webkit-box-shadow: -2px 0px 9px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow: -2px 0px 9px 2px rgba(0,0,0,0.5);
+
+  
+
+
+}

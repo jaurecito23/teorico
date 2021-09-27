@@ -1,0 +1,40 @@
+.link-whatsapp{
+
+    
+
+    a{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;        
+        text-decoration: none;
+
+        i{
+            font-size: 5rem;
+            color: #25D366;
+            margin: auto;
+        }
+
+        p, p i {
+
+            font-size: 2rem;
+            color: $gris;
+            text-decoration: none;
+            margin: .1rem auto;
+        }
+
+    }
+
+
+    a:hover{
+
+        p, p i{
+
+            color: $azul;
+
+        }
+
+    }
+
+}

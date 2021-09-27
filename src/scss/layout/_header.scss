@@ -1,0 +1,52 @@
+header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(45deg, rgba(24, 108, 128, 1) 0%, rgba(97, 204, 223, 1) 100%);
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 5px 5px 9px rgba(24, 108, 128, 0.1);
+
+    h1{
+
+        flex-basis:calc(75% - 2rem);
+        margin: auto;
+        font-family: $fuente-principal;
+        text-align: center;
+        font-size: 2rem;
+        color: $celeste-claro;
+      
+    }
+    
+    .menu{
+        
+        margin: auto;
+        flex-basis:calc(25% - 2rem);
+
+        i{
+
+            font-size: 3.4rem;
+            background-color: $celeste-muy-claro;
+            padding: 1rem;
+            border-radius: .7rem; 
+            color: $gris;
+            transition: all .5s ease-in-out;
+            
+        }
+    }
+
+    .menu:hover{
+        
+        i{
+            
+            background-color: $celeste-oscuro;
+            color: $celeste-muy-claro;
+            transform: rotate(1deg);
+
+        }
+
+    }
+}

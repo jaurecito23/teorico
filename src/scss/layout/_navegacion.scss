@@ -1,0 +1,126 @@
+.navegacion{
+
+    position: absolute;
+    height: 100vh;
+    width: 80%;
+    top: 0;
+    left: 0;
+    background-color: $azul;
+    animation-name: navegacion;
+    animation-duration: 1s;
+    overflow: hidden;
+
+    .enlaces,.listado-preguntas{
+
+        animation-name: enlaces;
+        animation-duration: .8s;
+
+    }
+
+    
+
+    .enlaces{
+        
+        display: flex;
+        flex-direction: column;
+        margin: 3rem auto;
+        width: 80%;
+        i{
+
+            margin-right: 1rem;
+
+        }    
+        a{
+
+            color: $celeste-muy-claro;
+            text-decoration: none;
+            font-size: 3rem;
+            font-family: $fuente-secundaria;
+            text-transform: uppercase;    
+            
+        }
+
+        a:hover{
+
+            color: $celeste-claro;
+            
+        }
+
+    }
+
+    .listado-preguntas{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        ul{
+            
+            padding: 0;
+
+        }
+        h3{
+            
+            color: $celeste-muy-claro;
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-family:$fuente-principal;
+
+            
+        }
+        
+        li{
+
+            list-style: none;
+          margin: auto;
+          
+      } 
+      
+      a{
+          
+            list-style: none;
+            color: $gris;
+            margin: 0;
+            margin: auto;
+        }
+
+        a:hover{
+            
+            color: $celeste-claro;
+
+        }
+    }
+
+}
+
+@keyframes navegacion {
+    
+    0%{opacity: 0; width: 0%}
+    25%{opacity: .25;}
+    50%{opacity: .50;}
+    75%{opacity: .75;}
+    100%{opacity: 1;width: 80%}
+
+}
+@keyframes enlaces {
+    
+    0%{opacity: 0; display: none;}
+    90%{opacity: 0; display: flex;}
+    95%{opacity: .3; }
+    100%{opacity: .9; }
+
+}
+
+@keyframes sacar-navegacion {
+    
+    from{opacity: 1;}
+    to{opacity: 0;}
+
+}
+
+.sacar-navegacion{
+    
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: sacar-navegacion;
+    
+ 
+}

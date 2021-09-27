@@ -1,0 +1,153 @@
+.main{
+
+    margin-top: 16vh;
+
+
+
+}
+
+.contenido-main{
+
+
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .resultado{
+
+        display:flex;
+
+        p{
+
+            color: $azul;
+            font-size: 1.6rem;
+            font-family: $fuente-principal;
+        }
+
+        span{
+
+            background-color: $gris;
+            color: $azul;
+            padding: 1rem;
+            border-radius: .8rem;
+
+
+        }
+
+        p:last-child{
+
+            margin-left: 2rem;
+           
+
+        }
+
+    }
+
+    h1{
+        margin-top: 2rem;
+        font-size: 2rem;
+        color: $azul;
+        text-align: center;
+        font-family: $fuente-principal;
+    }
+
+    i{
+
+        font-size: 3.5rem;
+        margin: 1.4rem auto;
+        color: #c1c1c1;
+
+    }
+
+    h2{
+
+        color: $gris;
+        font-size: 1.6rem;
+        text-align: center;
+
+    }
+
+    .cuestionario{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p{
+            background-color: $gris;
+            color: $celeste-muy-claro;
+            font-size: 1.8rem;
+            padding: .7rem;
+            font-family: $fuente-principal;
+            border-radius: .8rem;
+        }
+    }
+
+
+}
+
+.pregunta{
+
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    p{
+
+        color: $azul;
+        font-family: $fuente-principal;
+
+    }
+
+
+}
+
+form{
+
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .seleccionado{
+
+        border-bottom: 2px solid $gris;
+        
+        
+    }
+    
+    .campos{
+        
+        display: flex;
+        align-items: center;
+        margin: 1rem auto;
+        color: $celeste-oscuro;
+        font-size: 1.8rem;
+        font-family: $fuente-principal;
+
+        
+        label{
+            background-color: rgba(1,1,1,.1);
+            padding: 1rem;
+            border-radius: 1rem;
+            
+        }
+        label:hover{
+            
+            border-bottom: 2px solid $gris;
+            background-color: $azul;
+            color: $celeste-muy-claro;
+
+        }
+        input{
+
+            margin-left: 2rem;
+        }
+
+    }
+      
+
+}
